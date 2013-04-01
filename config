@@ -1,0 +1,9 @@
+Host eniac
+	HostName eniac.seas.upenn.edu
+	User nitini
+	IdentityFile ~/.ssh/keyz.txt
+
+Host github
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/keyz.txt
