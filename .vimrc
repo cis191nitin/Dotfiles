@@ -21,21 +21,28 @@ if has("syntax")
   syntax on
 endif
 
-set background=dark " Sets background to dark so that text color has more contrast "
-set virtualedit=onemore " Allows cursor to move one past the last character of a line, makes appending easier "
-set number " Shows the line number in vim "
-set showmode " Shows the current mode, Insert, Visual, etc. "
+set background=dark
+" Sets background to dark so that text color has more contrast "
+set virtualedit=onemore
+" Allows cursor to move one past the last character of a line, makes appending easier "
+set number
+" Shows the line number in vim "
+set showmode
+" Shows the current mode, Insert, Visual, etc. "
 :imap ii <Esc> 
 "  Remaps the escape button leave insertion mode to a double tap of i, makes it easier to switch back and forth "
 filetype indent on 
 " Will try to identify the specific filetype, and use the proper indenting format if identified "
-set cul "Highlight the current line"
+set cul
+"Highlight the current line"
 hi CursorLine term=none cterm=none ctermbg=3
 "Change the color of the highlight"
-set undolevels=1000 " 1000 undos available "
+set undolevels=1000
+" 1000 undos available "
 nore ; : 
 " Now can use semi-colon to enter command mode, not colon "
-set noerrorbells " No noises when you hit an error "
+set noerrorbells
+" No noises when you hit an error "
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
